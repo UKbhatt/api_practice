@@ -22,6 +22,7 @@ class _ExamplethreeState extends State<Examplethree> {
       usersList.clear();
       for (var i = 0; i < data.length; i++) {
         usersList.add(UserModel.fromJson(data[i]));
+        print("bye");
       }
       return usersList;
     } else {
@@ -67,7 +68,8 @@ class _ExamplethreeState extends State<Examplethree> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       const Text("username"),
-                                      Text(usersList[index].username.toString()),
+                                      Text(
+                                          usersList[index].username.toString()),
                                     ],
                                   ),
                                   Row(
@@ -83,7 +85,8 @@ class _ExamplethreeState extends State<Examplethree> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       const Text("Address"),
-                                      Text("\n${usersList[index].address!.city}"),
+                                      Text(
+                                          "\n${usersList[index].address!.city}"),
                                     ],
                                   ),
                                   Row(
@@ -91,7 +94,8 @@ class _ExamplethreeState extends State<Examplethree> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       const Text(""),
-                                      Text("${usersList[index].address!.street}\n ${usersList[index].address!.zipcode}")
+                                      Text(
+                                          "${usersList[index].address!.street}\n ${usersList[index].address!.zipcode}")
                                     ],
                                   )
                                 ],
