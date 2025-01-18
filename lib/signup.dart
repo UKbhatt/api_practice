@@ -25,7 +25,7 @@ class _SignupState extends State<Signup> {
       if (Response.statusCode == 200) {
         var data = jsonDecode(Response.body.toString());
         // print(data['if']); -----> if the response is successful and the wrong key is used, it will return 'NULL'
-        print(data['id']); // if the response is successful and the wrong key is used, it will return 'NULL'
+        // print(data['id']); // if the response is successful and the wrong key is used, it will return 'NULL'
         print("Signup Successful");
       } else {
         print("Failed to signup");
